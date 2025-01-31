@@ -20,17 +20,19 @@
         </div>
     </nav>
 
-    <div>
+
+    <div class="about-container">
         <img class="photo" src="media/img.jpg" alt="photo">
+        <div class="about-text">
+            <h1>Front-end software developer</h1>
+            <h5>Passionate about technology and design, with a bachelor's degree in Communication, focused on front-end development, sound design, and technical solutions. Skilled at creating responsive, user-friendly websites and applications using HTML, CSS, and JavaScript.
+                Strong in maintaining a detail-oriented approach, organizational skills, and a commitment to producing high-quality results.
+                
+                Currently enhancing expertise by taking courses in UX/UI design, mobile development, and project management in English, to stay updated and improve language proficiency.
+                A collaborative professional focused on delivering intuitive interfaces and resolving technical issues efficiently.</h5>
+        </div>
     </div>
-        <div class="about">
-        <h1>Front-end software developer</h1>
-        <h5>Passionate about technology and design, with a bachelor's degree in Communication, focused on front-end development, sound design, and technical solutions. Skilled at creating responsive, user-friendly websites and applications using HTML, CSS, and JavaScript.
-            Strong in maintaining a detail-oriented approach, organizational skills, and a commitment to producing high-quality results.
-            
-            Currently enhancing expertise by taking courses in UX/UI design, mobile development, and project management in English, to stay updated and improve language proficiency.
-            A collaborative professional focused on delivering intuitive interfaces and resolving technical issues efficiently.</h5>
-    </div>
+    
 
     <div>
         <h3>Skills</h3>
@@ -89,7 +91,34 @@
         </div>
 
         <div>
-            
+            <h3>Recommendations</h3>
+            <div class="recommendations-container">
+                <div class="recommendation-card">
+                    <h3>Professor A</h3>
+                    <p>"An exceptional mentor who always pushes us to reach our full potential. Their insights are invaluable."</p>
+                </div>
+                <div class="recommendation-card">
+                    <h3>Professor B</h3>
+                    <p>"Always engaging and supportive, Professor B creates a learning environment where everyone can thrive."</p>
+                </div>
+                <div class="recommendation-card">
+                    <h3>Classmate X</h3>
+                    <p>"A fantastic teammate who brings creativity and dedication to every project. It's always a pleasure working together."</p>
+                </div>
+            </div>
         </div>
+
+        <form action="" method="post">
+            <h2>Leave a recommendation</h2>
+            <label for="name" ></label>
+            <input type="text" name="name" id="message"placeholder="Name:" required>
+        
+            <label for="message"></label>
+            <textarea name="message" id="message" rows="4" placeholder="Message:"required></textarea>
+        
+            <button type="submit">Submit</button>
+        </form>
 </body>
+
+
 </html>
