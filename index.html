@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project / Course 6 / IBM iOS and Android mobile development</title>
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
     <nav class="navbar">
@@ -20,8 +19,7 @@
         </div>
     </nav>
 
-
-    <div class="about-container">
+    <section id="about" class="about-container">
         <img class="photo" src="media/img.jpg" alt="photo">
         <div class="about-text">
             <h1>Front-end software developer</h1>
@@ -30,9 +28,9 @@
                 Currently enhancing expertise by taking courses in UX/UI design, mobile development, and project management in English, to stay updated and improve language proficiency.
                 A collaborative professional focused on delivering intuitive interfaces and resolving technical issues efficiently.</h5>
         </div>
-    </div>
+    </section>
 
- <div class="skills-container">
+    <section id="skills" class="skills-container">
         <h3>Skills</h3>
         <div class="card">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="50">
@@ -64,59 +62,71 @@
             <h3>Git</h3>
             <p>Version control system</p>
         </div>
-    </div>
         <div class="card">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="50">
             <h3>Node.js</h3>
             <p>Server-side JavaScript runtime</p>
         </div>
-        <div class="project">    
-            <h2>Projects</h2>
-            <a href="https://sofia-1905.github.io/workspace-inicial"> E-commerce </a>
-                <h3>E-commerce</h3>
+    </section>
+
+    <section id="projects" class="projects">
+        <h3>Projects</h3>
+        <div class="project-container">
+            <div class="project-card">
+                <a href="https://sofia-1905.github.io/workspace-inicial">
+                    <img src="https://via.placeholder.com/300" alt="E-commerce">
+                    <h4>E-commerce</h4>
+                </a>
                 <p>Teamed up with three classmates to develop a group e-commerce project as part of the 'Jóvenes a Programar' web development course by Ceibal, utilizing HTML, CSS, JavaScript, Bootstrap, jQuery, and Node.js.</p>
-        </div>
-        <div class="project"> 
-            <h3>Poetry page</h3>   
-            <a href="#"> Poetry page </a>
+            </div>
+            <div class="project-card">
+                <a href="#">
+                    <img src="https://via.placeholder.com/300" alt="Poetry Page">
+                    <h4>Poetry Page</h4>
+                </a>
                 <p>Developed a personal website independently, utilizing HTML, CSS, and JavaScript, to display the poet's portfolio, featuring written poetry, visual poems, and contributions.</p>
             </div>
-        <div class="project">    
-           
-            <a href="#"> Personal Website </a>
-                <h3>Personal website</h3>
+            <div class="project-card">
+                <a href="#">
+                    <img src="https://via.placeholder.com/300" alt="Personal Website">
+                    <h4>Personal Website</h4>
+                </a>
                 <p>Designed and developed my personal website by myself, utilizing HTML, CSS, JavaScript, and Bootstrap, to showcase my work and projects.</p>
-        </div>
-
-        <div>
-            <h3>Recommendations</h3>
-            <div class="recommendations-container">
-                <div class="recommendation-card">
-                    <h3>Professor A</h3>
-                    <p>"An exceptional mentor who always pushes us to reach our full potential. Their insights are invaluable."</p>
-                </div>
-                <div class="recommendation-card">
-                    <h3>Professor B</h3>
-                    <p>"Always engaging and supportive, Professor B creates a learning environment where everyone can thrive."</p>
-                </div>
-                <div class="recommendation-card">
-                    <h3>Classmate X</h3>
-                    <p>"A fantastic teammate who brings creativity and dedication to every project. It's always a pleasure working together."</p>
-                </div>
             </div>
         </div>
+    </section>
 
-        <form action="" method="post">
-            <h2>Leave a recommendation</h2>
-            <label for="name" ></label>
-            <input type="text" name="name" id="message"placeholder="Name:" required>
-        
-            <label for="message"></label>
-            <textarea name="message" id="message" rows="4" placeholder="Message:"required></textarea>
-        
-            <button type="submit">Submit</button>
-        </form>
+    <section id="recommendations">
+        <h3>Recommendations</h3>
+        <div class="recommendations-container">
+            <div class="recommendation-card">
+                <h3>Professor A</h3>
+                <p>"An exceptional mentor who always pushes us to reach our full potential. Their insights are invaluable."</p>
+            </div>
+            <div class="recommendation-card">
+                <h3>Professor B</h3>
+                <p>"Always engaging and supportive, Professor B creates a learning environment where everyone can thrive."</p>
+            </div>
+            <div class="recommendation-card">
+                <h3>Classmate X</h3>
+                <p>"A fantastic teammate who brings creativity and dedication to every project. It's always a pleasure working together."</p>
+            </div>
+        </div>
+    </section>
+
+    <form action="" method="post">
+        <h2>Leave a recommendation</h2>
+        <label for="name"></label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <label for="message"></label>
+        <textarea name="message" id="message" rows="4" placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+
+    
+   
+        <script src="script.js"></script>
+
 </body>
-
-
 </html>
