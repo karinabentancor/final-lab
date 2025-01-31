@@ -57,4 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+window.onscroll = function() {
+    let scrollButton = document.getElementById('scrollToTop');
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollButton.style.display = "block";
+    } else {
+        scrollButton.style.display = "none";
+    }
+};
